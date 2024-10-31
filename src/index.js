@@ -12,7 +12,7 @@ function displayQuote(response) {
   
     let instructionsInput = document.querySelector("#user-instructions");
     let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
-    let context = "You are a quote expert and love to write short, inspiring quotes. Your mission is to generate a quote based on user input and format it appropriately. Sign the quote with Shukh's AI inside a <strong> element.";
+    let context = "You are a quote expert and love to write short, inspiring quotes. Your mission is to generate a quote based on user input and format it appropriately. Sign the quote with <br /> Shukh's AI inside a <strong> element.";
     let prompt = `User instructions: Generate an inspiring quote about ${instructionsInput.value}`;
     let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
