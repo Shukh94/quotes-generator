@@ -13,7 +13,10 @@ a {
 }
 
 header {
-  margin-bottom: 30px;
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -22,6 +25,10 @@ h1 {
   font-size: 36px;
   line-height: 1.5;
   color: #272044;
+}
+
+img {
+  width: 200px;
 }
 
 .form-container {
@@ -66,7 +73,7 @@ form {
 
   &:hover {
     background: #5611c5;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -105,5 +112,30 @@ footer {
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    text-align: center;
+    display: block;
+    margin: 45px 15px;
+  }
+
+  header p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  header img {
+    margin-top: 30px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .container {
+    margin: 30px auto;
   }
 }
