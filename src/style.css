@@ -70,7 +70,7 @@ form {
   }
 }
 
-.poem {
+.quote {
   font-size: 16px;
   background-color: #fff;
   padding: 20px;
@@ -83,7 +83,7 @@ form {
   display: none;
 }
 
-.poem strong {
+.quote strong {
   color: #885df1;
 }
 
